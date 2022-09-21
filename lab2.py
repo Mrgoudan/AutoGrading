@@ -8,9 +8,9 @@ names = []
 with open('repoName.csv', newline='') as inputfile:
     for row in csv.reader(inputfile):
         names.append(row[0])
-with open("correct.txt","r") as f:
-    correct = f.read()
-
+# with open("correct.txt","r") as f:
+#     correct = f.read()
+correct = b"CSCI3081W Lab 2 - Classes\n=========================\nDisplay using vector\n=========================\nName: Unknown\nType: Unknown\nColor: Unknown\n-------------------------\nName: King\nType: Canvasback\nColor: brown-white\n-------------------------\nName: Mob\nType: Mallard\nColor: green-white\n-------------------------\n\n=========================\nDisplay using object class\n=========================\nName: Unknown\nType: Unknown\nColor: Unknown\nMother: Unknown\n-------------------------\nName: King\nType: Canvasback\nColor: brown-white\nMother: Unknown\n-------------------------\nName: Mob\nType: Mallard\nColor: green-white\nMother's Name: Whity\nMother's Type: Mallard\nMother's Color: green-white\n-------------------------\nName: White\nType: Mallard\nColor: green-white\nMother's Name: Whity\nMother's Type: Mallard\nMother's Color: green-white\n-------------------------\n"
 print(names)
 path  = os.getcwd()+"/student"
 print(path)
@@ -31,12 +31,11 @@ for name in names:
     try:
         print("trying")
         out = sub.check_output(["./run"],cwd=os.getcwd()+"/"+name+"-lab02")
+        if out==correct:
+            fullmark.append(name)
         print(out)
 
     except:
         pass
 print(fullmark)
     
-
-
-
