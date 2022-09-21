@@ -1,0 +1,44 @@
+CSCI3081W Lab 2 - Classes
+=========================
+Display using vector
+=========================
+Name: Unknown
+Type: Unknown
+Color: Unknown
+-------------------------
+Name: King
+Type: Canvasback
+Color: brown-white
+-------------------------
+Name: Mob
+Type: Mallard
+Color: green-white
+-------------------------
+
+=========================
+Display using object class
+=========================
+Name: Unknown
+Type: Unknown
+Color: Unknown
+Mother: Unknown
+-------------------------
+Name: King
+Type: Canvasback
+Color: brown-white
+Mother: Unknown
+-------------------------
+Name: Mob
+Type: Mallard
+Color: green-white
+Mother's Name: Whity
+Mother's Type: Mallard
+Mother's Color: green-white
+-------------------------
+Name: White
+Type: Mallard
+Color: green-white
+Mother's Name: Whity
+Mother's Type: Mallard
+Mother's Color: green-white
+-------------------------
